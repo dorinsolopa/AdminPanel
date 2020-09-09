@@ -7,10 +7,10 @@ class TableCard extends React.Component {
   render() {
     return (
       <div className="row justify-content-md-center">
-        <div className="col-11">
+        <div className="col-12">
           <TableList tableData={tableData}/>
         </div>
-        <div className="col-11 mt-4 pt-5">
+        <div className="col-12 mt-4 pt-5">
             <PlainTable tableData={tableData}/>
         </div>
       </div>
