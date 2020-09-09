@@ -1,6 +1,6 @@
 import React from "react";
 import { Line } from "react-chartjs-2";
-
+import Card from "./Card"
 class ChartLineSmal extends React.Component {
   constructor(props) {
     super(props);
@@ -36,7 +36,7 @@ class ChartLineSmal extends React.Component {
 
   render() {
     return (
-      <div className="card shadow bg-secondary ">
+      <Card className=" shadow bgDark ">
         <div className="card-header py-3">
           <small>Total Shipments</small>
           <h5 className=" text-white">763,215</h5>
@@ -58,7 +58,7 @@ class ChartLineSmal extends React.Component {
             }}
           />
         </div>
-      </div>
+      </Card>
     );
   }
 }

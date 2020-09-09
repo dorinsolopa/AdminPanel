@@ -38,7 +38,7 @@ class Chart extends React.Component {
   render() {
     return (
       <Card>
-        <div className="card shadow  bg-secondary ">
+        <div className="shadow  ">
           <div className="card-header ">
             <small>Completed Tasks</small>
             <h3 className=" text-white"> 12,100K</h3>

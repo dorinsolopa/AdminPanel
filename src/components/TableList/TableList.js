@@ -6,7 +6,8 @@ class TableList extends React.Component {
     const { tableData } = this.props;
     return (
       <Card>
-      <table class="table table-border">
+      <h3 className="p-3">Simple Table</h3>
+      <table class="table table-border text-white">
         <thead>
           <tr>
             <th>Name</th>

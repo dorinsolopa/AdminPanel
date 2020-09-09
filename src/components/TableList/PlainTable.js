@@ -1,16 +1,17 @@
 import React from "react";
-import "./TableList";
+import "./TableList.css";
+
 class PlainTable extends React.Component {
   render() {
     const { tableData } = this.props;
     return (
-      <div>
-        <div>
-          <h3> Table on Plain Background</h3>
+      <div className="bodyBgColor">
+        <div className="text-white">
+          <h4 className="card-title"> Table on Plain Background</h4>
           <small>Here Is A Subtitle For This Table</small>
         </div>
 
-        <table class="table table table-dark rounded color ">
+        <table class="table text-white rounded  ">
           <thead>
             <tr>
               <th scope="col">NAME</th>

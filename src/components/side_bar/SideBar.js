@@ -8,10 +8,10 @@ class SideBar extends React.Component {
       return route.menu === true;
     });
     return (
-      <div className="d-flex " id="wrapper">
+      <div className="d-flex marginLeft" id="wrapper">
         <div className="bg-primary border-right  rounded" id="sidebar-wrapper">
           <div className="sidebar-heading row">
-            <div>
+            <div className="pr-2 pl-2">
               <img
                 className="logo-img"
                 src={require("../../assests/logo2.jpg")}

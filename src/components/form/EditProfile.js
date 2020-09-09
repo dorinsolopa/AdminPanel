@@ -5,9 +5,9 @@ import "./EditProfile.css";
 class EditProfile extends React.Component {
   render() {
     return (
-  
+
         <Card>
-          <form className="m-5 ">
+          <form className="p-5 ">
             <div className="form-row ">
               <div className="form-group col-md-5 ">
                 <label for="Company">Company (disabled)</label>

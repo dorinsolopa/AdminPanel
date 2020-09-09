@@ -1,16 +1,16 @@
 import React from "react";
-import RightFooter from "./RightFooter";
 import LeftFooter from "./LeftFooter";
+import RightFooter from "./RightFooter";
 
 class Footer extends React.Component {
   render() {
     return (
       <div className="row">
         <div className="col-6">
-          <RightFooter />
+          <LeftFooter />
         </div>
         <div className=" col-6 justify-content-end">
-          <LeftFooter />
+          <RightFooter />
         </div>
       </div>
     );

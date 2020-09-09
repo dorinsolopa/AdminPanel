@@ -1,10 +1,11 @@
 import React from "react";
 import { GoogleMap, LoadScript } from "@react-google-maps/api";
+import "./Maps.css"
 
 const containerStyle = {
   width: "915px",
   height: "500px",
-  alignItems:"center"
+  alignItems: "center",
 };
 
 const center = {
@@ -26,22 +27,25 @@ function Map() {
   }, []);
 
   return (
- <div className="row justify-content-md-center" >
-    <LoadScript
-      googleMapsApiKey="AIzaSyDuZKloNVBUC8QUxqpZxCbUi9eILOQeGQw"
-      column={{ xxl: 4, xl: 3, lg: 3, md: 3, sm: 2, xs: 1 }}
-    >
-      <GoogleMap
-        mapContainerStyle={containerStyle}
-        center={center}
-        zoom={10}
-        onLoad={onLoad}
-        onUnmount={onUnmount}
-      >
-        {/* Child components, such as markers, info windows, etc. */}
-        <></>
-      </GoogleMap>
-    </LoadScript>
+    <div >
+      <div className="text-white textRight">Google Maps</div>
+      <div className="row justify-content-md-center">
+        <LoadScript
+          googleMapsApiKey="AIzaSyDuZKloNVBUC8QUxqpZxCbUi9eILOQeGQw"
+          column={{ xxl: 4, xl: 3, lg: 3, md: 3, sm: 2, xs: 1 }}
+        >
+          <GoogleMap
+            mapContainerStyle={containerStyle}
+            center={center}
+            zoom={10}
+            onLoad={onLoad}
+            onUnmount={onUnmount}
+          >
+            {/* Child components, such as markers, info windows, etc. */}
+            <></>
+          </GoogleMap>
+        </LoadScript>
+      </div>
     </div>
   );
 }

@@ -1,18 +1,21 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-
+import Navbar from "../components/navbar/Navbar"
 import AppLayout from "./AppLayout";
+import "../components/chart/Card.css"
 class AppRouter extends React.Component {
   render() {
     const routes = this.props.routes;
     const allRoutes = [].concat(routes, this.props.publicRoutes);
     return (
       <BrowserRouter>
-        <AppLayout routes={routes}>
+       <div ><Navbar/></div>
+        <AppLayout activeClassName="selected" routes={routes}>
           <Switch>
             {allRoutes.map((route, index) => {
               return (
-                <Route
+                <Route 
+                activeClassName="active"
                   path={route.path}
                   component={route.component}
                   exact={route.exact}

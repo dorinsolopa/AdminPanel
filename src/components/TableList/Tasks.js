@@ -5,7 +5,7 @@ class Tasks extends React.Component {
   render() {
     const { tasksData } = this.props;
     return (
-      <div className="overflow-auto">
+      <Card >
         {tasksData.map((task) => {
           return (
             <div className="row ">
@@ -26,7 +26,7 @@ class Tasks extends React.Component {
 
                 <div className="d-flex justify-content-end text-center">
                   <button
-                    className="bg-secondary"
+                    className="bgDark"
                     style={{ border: "none", outline: "0" }}
                   >
                     <i className=" text-white fas fa-pencil-alt"></i>
@@ -38,7 +38,7 @@ class Tasks extends React.Component {
             </div>
           );
         })}
-      </div>
+      </Card>
     );
   }
 }

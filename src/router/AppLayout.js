@@ -1,7 +1,9 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
 import Sidebar from "../components/side_bar/SideBar";
-import Footer from "../components/footer/Footer"
+import Footer from "../components/footer/LeftFooter";
+import "../components/chart/Card.css";
+
 const AppLayout = (props) => {
   //   console.log(props, "props comment");
 
@@ -14,14 +16,16 @@ const AppLayout = (props) => {
   }
 
   return (
-    <div className="row bg-dark pl-3">
-      <div className="col-2  bg-primary text-white  bg-dark">
-        <Sidebar routes={props.routes} />
+    <div className="row  bodyBgColor pr-3">
+      <div className="col-2  text-white pl-3  bodyBgColor">
+        <Sidebar routes={props.routes}   activeClassName="active"/>
       </div>
 
-      <div className="col-10 ">{props.children}</div>
-      <div>
-        <Footer/>
+      <div className="col-10 ">
+        {props.children}
+        <div>
+          <Footer />
+        </div>
       </div>
     </div>
   );

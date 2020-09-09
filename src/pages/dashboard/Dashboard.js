@@ -4,13 +4,13 @@ import ChartLineSmall from "../../components/chart/ChartLineSmall";
 import ChartBar from "../../components/chart/ChartBar";
 import Chart from "../../components/chart/Chart";
 import SimpleTable from "../../components/TableList/SimpleTable";
-import { tableData,tasksData } from "../../info/Info";
-import Tasks from "../../components/TableList/Tasks"
-
+import { tableData, tasksData } from "../../info/Info";
+import Tasks from "../../components/TableList/Tasks";
+import "../../components/chart/Card.css";
 class Dashboard extends React.Component {
   render() {
     return (
-      <div className="bg-dark pr-4 ">
+      <div className=" pr-4 ">
         <div className="row ">
           <div className="col-sm-12">
             <ChartLine
@@ -30,17 +30,16 @@ class Dashboard extends React.Component {
             <Chart legendPosition="bottom" />
           </div>
         </div>
-      
-        <div className="card-deck mt-4">
-        <div className="card bg-secondary">
-          <Tasks tasksData={tasksData}/>
-        </div>
-          <div className="card bg-secondary">
+
+        <div className="row mt-4  ">
+          <div className=" col-sm-6 ">
+            <Tasks tasksData={tasksData} />
+          </div>
+          <div className="col-sm-6 ">
             <SimpleTable tableData={tableData} />
           </div>
         </div>
-        </div>
-     
+      </div>
     );
   }
 }

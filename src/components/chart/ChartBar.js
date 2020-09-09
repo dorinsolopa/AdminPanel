@@ -1,6 +1,6 @@
 import React from "react";
 import { Bar } from "react-chartjs-2";
-
+import Card from "./Card"
 class ChartBar extends React.Component {
   constructor(props) {
     super(props);
@@ -36,7 +36,7 @@ class ChartBar extends React.Component {
 
   render() {
     return (
-      <div className="card shadow bg-secondary ">
+      <Card className="bgDark">
         <div className="card-header py-3">
         <small>Daily Sales</small>
           <h5 className="font-weight text-primary"> 3,500€</h5>
@@ -57,7 +57,7 @@ class ChartBar extends React.Component {
             }}
           />
         </div>
-      </div>
+      </Card>
     );
   }
 }

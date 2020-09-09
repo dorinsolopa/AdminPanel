@@ -1,17 +1,17 @@
 import React from "react";
 import "./ProfileCard.css";
-
+import Card from "../chart/Card";
 class ProfileCard extends React.Component {
   render() {
     return (
-      <div>
-        <div class="card profile-card-4 bg-dark">
-          <div class="card-img-block">
+      <Card>
+        <div class=" profile-card-4 ">
+          <div class="card-img-block rounded">
             <img src={require("../../assests/tree.jpg")} />
           </div>
           <div class="card-body pt-5">
             <img
-              src={require("../../assests/header.jpg")}
+              src={require("../../assests/anime3.png")}
               alt="profile-image"
               class="profile"
             />
@@ -23,18 +23,18 @@ class ProfileCard extends React.Component {
             </p>
             <div className="icon-block text-center">
               <a href="#">
-                <i className="	fa fa-facebook-official"></i>
+                <i className="	fab fa-facebook-f"></i>
               </a>
               <a href="#">
-                <i className="fa fa-twitter"></i>
+                <i className="fab fa-twitter"></i>
               </a>
               <a href="#">
-                <i className="fa fa-google-plus"></i>
+                <i className="fab fa-google-plus-g"></i>
               </a>
             </div>
           </div>
         </div>
-      </div>
+      </Card>
     );
   }
 }

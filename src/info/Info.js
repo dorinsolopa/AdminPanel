@@ -17,45 +17,6 @@ export const info = [
   },
 ];
 
-export const data = {
-  labels: [
-    "JAN",
-    "FEB",
-    "MAR",
-    "APR",
-    "MAY",
-    "JUN",
-    "JUL",
-    "AUG",
-    "SEP",
-    "OCT",
-    "NOV",
-    "DEC",
-  ],
-  datasets: [
-    {
-      label: "Performance",
-      fill: false,
-      lineTension: 0.1,
-      backgroundColor: "rgba(13, 115, 217,0.4)",
-      borderCapStyle: "but",
-      borderDash: [],
-      borderDashOffset: 0.0,
-      borderJoinStyle: "miter",
-      pointBorderColor: "rgba(13, 115, 217,1)",
-      pointBackgroundColor: "#fff",
-      pointBorderWidth: 1,
-      pointHoverRadius: 5,
-      pointHoverBackgroundColor: "rgba(13, 115, 217,1)",
-      pointHoverBorderColor: "rgba(220,220,220,1)",
-      pointHoverBorderWidth: 2,
-      pointRadius: 1,
-      pointHitRadius: 10,
-      data: [100, 70, 90, 70, 85, 60, 75, 60, 90, 80, 110, 100],
-    },
-  ],
-};
-
 export const tableData = [
   {
     name: "Dakota Rice",
@@ -160,9 +121,157 @@ export const backgroundColor = [
 ];
 
 export const header = {
-  text:"The Life of Black Dashboard React"
-}
+  text: "The Life of Black Dashboard React",
+};
 
-export const text_color = {
-color_text:"I will be the leader of a company that ends up being worth billions of dollars, because I got the answers..."
-}
+export const textColor = {
+  colorText:
+    "I will be the leader of a company that ends up being worth billions of dollars, because I got the answers...",
+  color: [
+    {
+      text: "Muted text",
+      color: "secondary",
+    },
+    {
+      text: "Primary text",
+      color: "primary",
+    },
+    {
+      text: "Info text",
+      color: "info",
+    },
+    {
+      text: "Sccess text",
+      color: "success",
+    },
+    {
+      text: "Warning text",
+      color: "warning",
+    },
+    {
+      text: "Danger text",
+      color: "danger",
+    },
+  ],
+};
+
+export const icons = [
+  {
+    icon: "fas fa-ad",
+    info:""
+  },
+  {
+    icon: "fas fa-allergies",
+  },
+  {
+    icon: "fas fa-american-sign-language-interpreting",
+  },
+  {
+    icon: "fab fa-amilia",
+  },
+  {
+    icon: "fas fa-angle-double-right",
+  },
+
+  {
+    icon: "fab fa-angular",
+  },
+  {
+    icon: "fab fa-apple",
+  },
+  {
+    icon: "fas fa-arrow-alt-circle-left",
+  },
+
+  {
+    icon: "fas fa-arrow-circle-left",
+    link: "https://fontawesome.com/icons/arrow-circle-left?style=solid",
+  },
+  {
+    icon: "fas fa-arrow-down",
+    link: "https://fontawesome.com/icons/arrow-down?style=solid",
+  },
+  {
+    icon: "fas fa-arrows-alt-v",
+    link: "https://fontawesome.com/icons/arrows-alt-v?style=solid",
+  },
+  {
+    icon: "fas fa-atlas",
+  },
+  {
+    icon: "fab fa-aviato",
+  },
+  {
+    icon: "fas fa-balance-scale-right",
+  },
+  {
+    icon: "fas fa-baseball-ball",
+  },
+  {
+    icon: "fas fa-bath",
+  },
+  {
+    icon: "fas fa-battery-half",
+  },
+  {
+    icon: "fab fa-aviato",
+  },
+  {
+    icon: "fas fa-balance-scale-right",
+  },
+  {
+    icon: "fas fa-baseball-ball",
+  },
+  {
+    icon: "fas fa-bath",
+  },
+  {
+    icon: "fas fa-battery-half",
+  },
+  {
+    icon: "fab fa-aviato",
+  },
+  {
+    icon: "fas fa-balance-scale-right",
+  },
+  {
+    icon: "fas fa-baseball-ball",
+  },
+  {
+    icon: "fas fa-bath",
+  },
+  {
+    icon: "fas fa-battery-half",
+  },
+  {
+    icon: "fab fa-cc-visa",
+    link: "https://fontawesome.com/icons/cc-visa?style=brands",
+    info: "cc-visa",
+  },
+
+  {
+    icon: "fas fa-charging-station",
+    link: "https://fontawesome.com/icons/charging-station?style=solid",
+    info: "charging-station",
+  },
+  {
+    icon: "fab fa-cc-visa",
+    link: "https://fontawesome.com/icons/cc-visa?style=brands",
+  },
+  {
+    icon: "fab fa-cc-visa",
+    link: "https://fontawesome.com/icons/cc-visa?style=brands",
+  },
+
+  {
+    icon: "fab fa-angrycreative",
+    link: "https://fontawesome.com/icons/angrycreative?style=brands",
+    info: "angrycreative",
+  },
+
+  {
+    icon: "fas fa-biking",
+    link: "https://fontawesome.com/icons/biking?style=solid",
+    info: "biking",
+  },
+];

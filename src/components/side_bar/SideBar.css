@@ -1,6 +1,5 @@
 #wrapper {
   overflow-x: hidden;
-
 }
 
 #sidebar-wrapper {
@@ -15,7 +14,7 @@
 }
 
 #sidebar-wrapper .list-group {
-  width: 15rem;
+  width: 12rem;
 }
 
 #page-content-wrapper {
@@ -41,8 +40,12 @@
   }
 }
 
-.logo-img{
+.logo-img {
   border-radius: 50%;
   width: 30px;
   height: 30px;
+}
+.marginLeft {
+  margin-left: 15px;
+  position: fixed;
 }
